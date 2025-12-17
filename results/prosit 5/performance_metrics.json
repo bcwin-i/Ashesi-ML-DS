@@ -1,0 +1,112 @@
+{
+  "timestamp": "2025-12-15T16:20:14.123720",
+  "dataset_info": {
+    "total_students": 1367,
+    "students_with_admissions_data": 1367,
+    "students_with_first_year_data": 1358,
+    "yeargroups": [
+      2023,
+      2024,
+      2025,
+      2026,
+      2027,
+      2028
+    ]
+  },
+  "q1_first_year_struggle": {
+    "model_type": "RandomForestClassifier",
+    "n_samples": 1226,
+    "struggling_count": 94,
+    "struggling_percentage": 7.6672104404567705,
+    "features": [
+      "math_score",
+      "english_score",
+      "composite_score"
+    ],
+    "feature_importance": [
+      {
+        "feature": "composite_score",
+        "importance": 0.6048361803213634
+      },
+      {
+        "feature": "english_score",
+        "importance": 0.23308851626880372
+      },
+      {
+        "feature": "math_score",
+        "importance": 0.16207530340983278
+      }
+    ]
+  },
+  "q2_ajc_prediction": {
+    "model_type": "LogisticRegression",
+    "n_samples": 1233,
+    "ajc_cases": 35,
+    "ajc_percentage": 2.83860502838605,
+    "features": [
+      "math_score",
+      "english_score",
+      "composite_score"
+    ]
+  },
+  "q3_major_success": {
+    "model_type": "RandomForestClassifier",
+    "n_samples": 1226,
+    "successful_count": 674,
+    "success_percentage": 54.97553017944535,
+    "features": [
+      "math_score",
+      "english_score",
+      "first_year_gpa"
+    ]
+  },
+  "q4_major_change": {
+    "finding": "Only 0.1% of students changed majors",
+    "n_changed": 2,
+    "total_students": 1367,
+    "interpretation": "Strong alignment between admissions and enrollment"
+  },
+  "q7_math_track_comparison": {
+    "test": "T-test (Calculus vs College Algebra)",
+    "calculus_mean_gpa": 2.9729898074745185,
+    "college_algebra_mean_gpa": 2.5100000000000002,
+    "gpa_difference": 0.463,
+    "p_value": 0.0151,
+    "significant": true,
+    "interpretation": "Calculus students perform significantly better"
+  },
+  "q8_algebra_in_cs": {
+    "finding": "Zero College Algebra students in Computer Science",
+    "interpretation": "Math prerequisites or self-selection prevent College Algebra students from entering CS"
+  },
+  "q9_delayed_graduation": {
+    "model_type": "RandomForestClassifier",
+    "n_samples": 1226,
+    "delayed_count": 1212,
+    "delayed_percentage": 98.85807504078304,
+    "features": [
+      "math_score",
+      "english_score",
+      "first_year_gpa",
+      "failed_courses"
+    ],
+    "feature_importance": [
+      {
+        "feature": "first_year_gpa",
+        "importance": 0.7552359725879096
+      },
+      {
+        "feature": "english_score",
+        "importance": 0.15693946607105105
+      },
+      {
+        "feature": "math_score",
+        "importance": 0.08782456134103925
+      },
+      {
+        "feature": "failed_courses",
+        "importance": 0.0
+      }
+    ]
+  }
+}

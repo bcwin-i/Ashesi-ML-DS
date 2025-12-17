@@ -1,0 +1,21 @@
+{
+  "prosit": 5,
+  "title": "Bringing It All Together",
+  "created": "2025-12-15T16:21:50.346905",
+  "models": [
+    "q1_first_year_struggle",
+    "q2_ajc_prediction",
+    "q3_major_success",
+    "q9_delayed_graduation"
+  ],
+  "data_sources": [
+    "merged_cleaned_encoded.csv",
+    "anon_AJC.csv",
+    "WASSCE_C2023-C2028-anon.csv",
+    "IB_C2023-C2028-anon.csv",
+    "O&A_Level_C2023-C2028-anon.csv"
+  ],
+  "research_questions": 9,
+  "models_implemented": 4,
+  "findings_documented": 5
+}

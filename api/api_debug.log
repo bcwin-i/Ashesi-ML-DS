@@ -1,0 +1,482 @@
+INFO:     Will watch for changes in these directories: ['/Volumes/External Storage/School/Ashesi/ML & DS/Final Prosit/api']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [50193] using WatchFiles
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/pandas/core/arrays/masked.py:61: UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed).
+  from pandas.core import (
+INFO:     Started server process [50196]
+INFO:     Waiting for application startup.
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator PCA from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator KMeans from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator DBSCAN from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator AgglomerativeClustering from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator GaussianMixture from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+INFO:     Application startup complete.
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+✅ Loaded 4 Prosit 2 clustering models
+✅ Loaded 6 Prosit 3 classification models
+✅ Loaded 4 Prosit 5 predictive models
+✅ Total models loaded: 14
+
+============================================================
+PROSIT 2 PREDICTION - KMEANS
+============================================================
+Key Input Features:
+  Mark: 75.0
+  GPA_y: 3.0
+  CGPA_y: 3.0
+  Grade Point: 3.0
+  Yeargroup: 2024.0
+
+PCA Transformed (first 5 components): [  4.01306427   0.33439551 -10.19900171  -5.38446086  -1.0360424 ]
+
+Distances to cluster centers:
+  Cluster 0: 15.4368
+  Cluster 1: 6.6517
+  Cluster 2: 15.2310
+  Cluster 3: 14.9604
+  Cluster 4: 14.8998
+
+Predicted Cluster: 1
+============================================================
+
+INFO:     127.0.0.1:63833 - "POST /prosit2/cluster/kmeans HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+============================================================
+PROSIT 2 PREDICTION - KMEANS
+============================================================
+Key Input Features:
+  Mark: 95.0
+  GPA_y: 3.9
+  CGPA_y: 3.8
+  Grade Point: 4.0
+  Yeargroup: 2024.0
+
+PCA Transformed (first 5 components): [  3.69318825   3.32313761 -10.37438087  -5.85204056  -0.58833584]
+
+Distances to cluster centers:
+  Cluster 0: 15.8769
+  Cluster 1: 7.7251
+  Cluster 2: 16.2826
+  Cluster 3: 15.2634
+  Cluster 4: 15.4874
+
+Predicted Cluster: 1
+============================================================
+
+INFO:     127.0.0.1:63858 - "POST /prosit2/cluster/kmeans HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+============================================================
+PROSIT 2 PREDICTION - KMEANS
+============================================================
+Key Input Features:
+  Mark: 50.0
+  GPA_y: 2.0
+  CGPA_y: 2.1
+  Grade Point: 2.0
+  Yeargroup: 2024.0
+
+PCA Transformed (first 5 components): [ 4.38968457 -3.20773397 -9.95618754 -4.80936899 -1.60822365]
+
+Distances to cluster centers:
+  Cluster 0: 15.7223
+  Cluster 1: 7.1694
+  Cluster 2: 14.7641
+  Cluster 3: 15.4347
+  Cluster 4: 15.0366
+
+Predicted Cluster: 1
+============================================================
+
+INFO:     127.0.0.1:63862 - "POST /prosit2/cluster/kmeans HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+============================================================
+PROSIT 2 PREDICTION - KMEANS
+============================================================
+Key Input Features:
+  Mark: 75.0
+  GPA_y: 3.0
+  CGPA_y: 3.0
+  Grade Point: 3.0
+  Yeargroup: 2024.0
+
+PCA Transformed (first 5 components): [ 4.47279555  0.91125854 -4.51635627 -1.39981568 -2.0505201 ]
+
+Distances to cluster centers:
+  Cluster 0: 9.4334
+  Cluster 1: 5.3661
+  Cluster 2: 8.8768
+  Cluster 3: 8.2546
+  Cluster 4: 7.1208
+
+Predicted Cluster: 1
+============================================================
+
+INFO:     127.0.0.1:63934 - "POST /prosit2/cluster/kmeans HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63959 - "OPTIONS /prosit2/cluster/kmeans HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+============================================================
+PROSIT 2 PREDICTION - KMEANS
+============================================================
+Key Input Features:
+  Mark: 75.0
+  GPA_y: 3.0
+  CGPA_y: 3.0
+  Grade Point: 3.0
+  Yeargroup: 2024.0
+
+PCA Transformed (first 5 components): [ 4.47279555  0.91125854 -4.51635627 -1.39981568 -2.0505201 ]
+
+Distances to cluster centers:
+  Cluster 0: 9.4334
+  Cluster 1: 5.3661
+  Cluster 2: 8.8768
+  Cluster 3: 8.2546
+  Cluster 4: 7.1208
+
+Predicted Cluster: 1
+============================================================
+
+INFO:     127.0.0.1:63959 - "POST /prosit2/cluster/kmeans HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63959 - "OPTIONS /prosit2/cluster/hierarchical HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+============================================================
+PROSIT 2 PREDICTION - HIERARCHICAL
+============================================================
+Key Input Features:
+  Mark: 75.0
+  GPA_y: 3.0
+  CGPA_y: 3.0
+  Grade Point: 3.0
+  Yeargroup: 2024.0
+
+PCA Transformed (first 5 components): [ 4.47279555  0.91125854 -4.51635627 -1.39981568 -2.0505201 ]
+
+Predicted Cluster: 0 (default for hierarchical)
+============================================================
+
+INFO:     127.0.0.1:63959 - "POST /prosit2/cluster/hierarchical HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63963 - "OPTIONS /prosit2/cluster/gmm HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+============================================================
+PROSIT 2 PREDICTION - GMM
+============================================================
+Key Input Features:
+  Mark: 75.0
+  GPA_y: 3.0
+  CGPA_y: 3.0
+  Grade Point: 3.0
+  Yeargroup: 2024.0
+
+PCA Transformed (first 5 components): [ 4.47279555  0.91125854 -4.51635627 -1.39981568 -2.0505201 ]
+============================================================
+
+INFO:     127.0.0.1:63963 - "POST /prosit2/cluster/gmm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63994 - "GET /prosit2/models/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63995 - "GET /prosit2/results/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63997 - "GET /prosit2/models/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63994 - "GET /prosit2/results/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64065 - "GET /prosit2/models/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64067 - "GET /prosit2/models/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64155 - "GET /prosit2/models/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64156 - "GET /prosit2/results/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64158 - "GET /prosit2/models/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64155 - "GET /prosit2/results/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64222 - "GET /prosit2/models/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64223 - "GET /prosit2/results/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64225 - "GET /prosit2/models/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64222 - "GET /prosit2/results/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64325 - "OPTIONS /prosit3/predict/ensemble HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64325 - "POST /prosit3/predict/ensemble HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64375 - "POST /prosit3/predict/ensemble HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64379 - "OPTIONS /prosit3/predict/baseline_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:64379 - "POST /prosit3/predict/baseline_logistic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64379 - "OPTIONS /prosit3/predict/lasso_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:64379 - "POST /prosit3/predict/lasso_logistic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64379 - "OPTIONS /prosit3/predict/ridge_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but RidgeClassifierCV was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:64379 - "POST /prosit3/predict/ridge_logistic HTTP/1.1" 500 Internal Server Error
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:64513 - "POST /prosit3/predict/baseline_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:64513 - "POST /prosit3/predict/lasso_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but RidgeClassifierCV was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:64513 - "POST /prosit3/predict/ridge_logistic HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:64516 - "POST /prosit3/predict/ensemble HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64766 - "GET /prosit2/models/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64767 - "GET /prosit2/results/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64770 - "GET /prosit2/models/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64766 - "GET /prosit2/results/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64881 - "OPTIONS /prosit3/predict/ensemble HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64881 - "POST /prosit3/predict/ensemble HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64894 - "OPTIONS /prosit3/predict/baseline_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:64894 - "POST /prosit3/predict/baseline_logistic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64894 - "OPTIONS /prosit3/predict/lasso_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:64894 - "POST /prosit3/predict/lasso_logistic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64894 - "OPTIONS /prosit3/predict/ridge_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but RidgeClassifierCV was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:64894 - "POST /prosit3/predict/ridge_logistic HTTP/1.1" 500 Internal Server Error
+WARNING:  WatchFiles detected changes in 'endpoint_draft_metrics.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [50196]
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/pandas/core/arrays/masked.py:61: UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed).
+  from pandas.core import (
+INFO:     Started server process [60154]
+INFO:     Waiting for application startup.
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator PCA from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator KMeans from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator DBSCAN from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator AgglomerativeClustering from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator GaussianMixture from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [60154]
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/pandas/core/arrays/masked.py:61: UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed).
+  from pandas.core import (
+INFO:     Started server process [60484]
+INFO:     Waiting for application startup.
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator PCA from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator KMeans from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator DBSCAN from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator AgglomerativeClustering from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator GaussianMixture from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+INFO:     Application startup complete.
+✅ Loaded 4 Prosit 2 clustering models
+✅ Loaded 6 Prosit 3 classification models
+✅ Loaded 4 Prosit 5 predictive models
+✅ Total models loaded: 14
+INFO:     127.0.0.1:65448 - "GET /prosit3/results/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65489 - "POST /prosit3/predict/ensemble HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65510 - "GET /prosit3/results/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65513 - "GET /prosit3/results/metrics HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:65515 - "POST /prosit3/predict/baseline_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:65515 - "POST /prosit3/predict/lasso_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but RidgeClassifierCV was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:65515 - "POST /prosit3/predict/ridge_logistic HTTP/1.1" 500 Internal Server Error
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:65515 - "POST /prosit3/predict/baseline_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:65515 - "POST /prosit3/predict/lasso_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but RidgeClassifierCV was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:65515 - "POST /prosit3/predict/ridge_logistic HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:49175 - "GET /prosit3/results/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49177 - "GET /prosit3/results/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49182 - "OPTIONS /prosit3/predict/baseline_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:49182 - "POST /prosit3/predict/baseline_logistic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49182 - "OPTIONS /prosit3/predict/lasso_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:49182 - "POST /prosit3/predict/lasso_logistic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49182 - "OPTIONS /prosit3/predict/ridge_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but RidgeClassifierCV was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:49182 - "POST /prosit3/predict/ridge_logistic HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:49201 - "GET /prosit3/results/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49203 - "GET /prosit3/results/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49259 - "OPTIONS /prosit3/predict/ensemble HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49259 - "POST /prosit3/predict/ensemble HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49284 - "GET /prosit3/results/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49286 - "GET /prosit3/results/metrics HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:49288 - "POST /prosit3/predict/baseline_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:49288 - "POST /prosit3/predict/lasso_logistic HTTP/1.1" 200 OK
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but RidgeClassifierCV was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:49288 - "POST /prosit3/predict/ridge_logistic HTTP/1.1" 500 Internal Server Error
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [60484]
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/pandas/core/arrays/masked.py:61: UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed).
+  from pandas.core import (
+INFO:     Started server process [60867]
+INFO:     Waiting for application startup.
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator PCA from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator KMeans from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator DBSCAN from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator AgglomerativeClustering from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/base.py:463: InconsistentVersionWarning: Trying to unpickle estimator GaussianMixture from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+INFO:     Application startup complete.
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegressionCV was fitted with feature names
+  warnings.warn(
+/Users/isaacbekoe/anaconda3/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but RidgeClassifierCV was fitted with feature names
+  warnings.warn(
+✅ Loaded 4 Prosit 2 clustering models
+✅ Loaded 6 Prosit 3 classification models
+✅ Loaded 4 Prosit 5 predictive models
+✅ Total models loaded: 14
+INFO:     127.0.0.1:49382 - "POST /prosit3/predict/ensemble HTTP/1.1" 500 Internal Server Error

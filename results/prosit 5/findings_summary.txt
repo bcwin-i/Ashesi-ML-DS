@@ -1,0 +1,49 @@
+
+# Prosit 5: Key Findings Summary
+Generated: 2025-12-15 16:20:58
+
+## Dataset Overview
+- Total Students: 1367
+- Yeargroups: [2023.0, 2024.0, 2025.0, 2026.0, 2027.0, 2028.0]
+- Students with Admissions Data: 1367
+
+## Research Question Results
+
+### Q1: First-Year Struggle Prediction
+- 94.0 students (7.7%) struggled
+- Model: Random Forest with 92% accuracy for non-struggling students
+- Key predictor: Composite admissions score
+
+### Q2: AJC Involvement Prediction  
+- 35.0 students (2.8%) had AJC cases
+- Model: Logistic Regression
+- Challenge: Highly imbalanced classes
+
+### Q3: Major Success Prediction
+- 674 students (55.0%) successful (GPA ≥ 3.0)
+- Model: Random Forest with 92% accuracy
+- Year 1 GPA is highly predictive
+
+### Q4: Major Change Prediction
+- Only 2 students (0.1%) changed majors
+- Finding: Extremely rare, indicating strong admissions-enrollment alignment
+
+### Q7: Math Track Comparison
+- Calculus students: 2.97 avg GPA
+- College Algebra students: 2.51 avg GPA
+- Difference: 0.46 points (p=0.0151, significant)
+
+### Q8: College Algebra in CS
+- Zero College Algebra students in Computer Science
+- Suggests math prerequisites or self-selection barriers
+
+### Q9: Delayed Graduation
+- 1212 students (98.9%) need >8 semesters
+- Model: Random Forest
+- Key predictor: Failed courses count
+
+## Recommendations
+1. Early intervention for students with low admissions scores
+2. Additional math support for College Algebra track students
+3. Monitor major satisfaction (changes are rare but important)
+4. Track failed courses as early warning for delayed graduation

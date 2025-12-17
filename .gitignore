@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node modules (for web-app)
+web-app/node_modules/
+web-app/dist/
+web-app/.env
+web-app/.env.local
+
+# Large data files (exceeding GitHub's 100MB limit)
+data/merged_cleaned.csv
+data/merged_cleaned_encoded.csv
+results/prosit\ 2/clustering_results.csv
+
+# Other data files (optional - uncomment if needed)
+# *.pkl
+# *.joblib
+
+# Model files (optional - uncomment if models are too large)
+# models/*.pkl
+# models/*.joblib
