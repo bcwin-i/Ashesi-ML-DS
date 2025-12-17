@@ -1,0 +1,52 @@
+# Prosit 5: Key Findings Summary
+Generated: 2025-12-17 21:57:21
+
+## Dataset Overview
+- Total Students: 3718
+- Students with Admissions Data: 1509
+
+
+## Additional Analyses (Q6-9)
+
+### Q6: Admissions Score Impact
+- Analyzed 1364 students with complete admissions data
+- Math Score: r=0.235, p=0.0000 (✅ Significant)
+- English Score: r=0.238, p=0.0000 (✅ Significant)
+- Composite Score: r=0.314, p=0.0000 (✅ Significant)
+
+### Q7: Program-Specific Success
+- Analyzed 10 programs with ≥10 students
+- Highest success rate: 10 (72.5%)
+- Mean CGPA range: 2.79 - 3.12
+
+### Q8: Major Change Impact
+- Insufficient data for analysis
+
+### Q9: AJC Impact on Performance
+- Students with AJC cases: 134 (3.6%)
+- With AJC - Mean CGPA: 2.788
+- Without AJC - Mean CGPA: 3.003
+- Impact is significant (p=0.0000)
+
+
+## Additional Analyses (Q6-9)
+
+### Q6: Admissions Score Impact
+- Analyzed 1364 students with complete admissions data
+- Math Score: r=0.235, p=0.0000 (✅ Significant)
+- English Score: r=0.238, p=0.0000 (✅ Significant)
+- Composite Score: r=0.314, p=0.0000 (✅ Significant)
+
+### Q7: Program-Specific Success
+- Analyzed 10 programs with ≥10 students
+- Highest success rate: 10 (72.5%)
+- Mean CGPA range: 2.79 - 3.12
+
+### Q8: Major Change Impact
+- Insufficient data for analysis
+
+### Q9: AJC Impact on Performance
+- Students with AJC cases: 134 (3.6%)
+- With AJC - Mean CGPA: 2.788
+- Without AJC - Mean CGPA: 3.003
+- Impact is significant (p=0.0000)

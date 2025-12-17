@@ -133,7 +133,7 @@ const AdmissionsView = () => {
                         {loading ? "..." : metrics?.dataset_info.total_students.toLocaleString()}
                     </h2>
                     <p className="text-xs text-blue-500 mt-1">
-                        {loading ? "Loading..." : `${metrics?.dataset_info.yeargroups.length} year groups analyzed`}
+                        {loading ? "Loading..." : `${metrics?.dataset_info?.yeargroups?.length || 0} year groups analyzed`}
                     </p>
                 </DarkCard>
                 <DarkCard tooltip="Percentage of students who struggle academically in their first year based on entrance exam scores">

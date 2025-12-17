@@ -29,15 +29,52 @@ const PredictRisk = () => {
   const [predicting, setPredicting] = useState(false);
   const [result, setResult] = useState<PredictionResult | null>(null);
   const [studentData, setStudentData] = useState({
-    mark: 75,
-    gpa_y: 3.0,
-    cgpa_y: 3.0,
-    grade_point: 3.0,
-    cgpa_x: 3.0,
+    mark: 58,
+    gpa_y: 2.0,
+    cgpa_y: 2.0,
+    grade_point: 2.0,
+    cgpa_x: 2.0,
     yeargroup: 2024,
-    gpa_x: 3.0,
+    gpa_x: 2.0,
     subject_credit: 3.0,
   });
+
+  const loadPreset = (preset: 'excellent' | 'moderate' | 'at-risk') => {
+    const presets = {
+      excellent: {
+        mark: 85,
+        gpa_y: 3.7,
+        cgpa_y: 3.7,
+        grade_point: 3.7,
+        cgpa_x: 3.7,
+        yeargroup: 2024,
+        gpa_x: 3.7,
+        subject_credit: 3.0,
+      },
+      moderate: {
+        mark: 58,
+        gpa_y: 2.0,
+        cgpa_y: 2.0,
+        grade_point: 2.0,
+        cgpa_x: 2.0,
+        yeargroup: 2024,
+        gpa_x: 2.0,
+        subject_credit: 3.0,
+      },
+      'at-risk': {
+        mark: 45,
+        gpa_y: 1.5,
+        cgpa_y: 1.5,
+        grade_point: 1.5,
+        cgpa_x: 1.5,
+        yeargroup: 2024,
+        gpa_x: 1.5,
+        subject_credit: 3.0,
+      },
+    };
+    setStudentData(presets[preset]);
+    setResult(null);
+  };
 
   const handlePredict = async () => {
     try {
@@ -126,6 +163,31 @@ const PredictRisk = () => {
       <div className="col-span-12 lg:col-span-5">
         <DarkCard title="Student Academic Data" subtitle="Enter details for risk assessment">
           <div className="space-y-4">
+            {/* Preset Examples */}
+            <div className="mb-6">
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Quick Examples</label>
+              <div className="grid grid-cols-3 gap-2">
+                <button
+                  onClick={() => loadPreset('excellent')}
+                  className="px-3 py-2 text-xs bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 rounded-lg border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 dark:hover:bg-emerald-900/30 transition-colors"
+                >
+                  ✨ Excellent
+                </button>
+                <button
+                  onClick={() => loadPreset('moderate')}
+                  className="px-3 py-2 text-xs bg-orange-50 dark:bg-orange-900/20 text-orange-700 dark:text-orange-400 rounded-lg border border-orange-200 dark:border-orange-800 hover:bg-orange-100 dark:hover:bg-orange-900/30 transition-colors"
+                >
+                  ⚠️ Moderate
+                </button>
+                <button
+                  onClick={() => loadPreset('at-risk')}
+                  className="px-3 py-2 text-xs bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 rounded-lg border border-red-200 dark:border-red-800 hover:bg-red-100 dark:hover:bg-red-900/30 transition-colors"
+                >
+                  🚨 At Risk
+                </button>
+              </div>
+            </div>
+
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Mark</label>
@@ -187,9 +249,13 @@ const PredictRisk = () => {
               <div className="flex items-start space-x-2">
                 <Info className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
                 <div className="text-sm text-blue-800 dark:text-blue-300">
+                  <p className="font-medium mb-1">Probation Risk Definition</p>
+                  <p className="text-xs mb-2">
+                    Students with <strong>CGPA below 2.0</strong> are considered at probation risk.
+                  </p>
                   <p className="font-medium mb-1">Ensemble Prediction</p>
                   <p className="text-xs">
-                    Uses majority voting from 6 models (Logistic Regression, Random Forest, etc.) for robust assessment.
+                    Uses majority voting from 4 logistic regression models for robust assessment.
                   </p>
                 </div>
               </div>

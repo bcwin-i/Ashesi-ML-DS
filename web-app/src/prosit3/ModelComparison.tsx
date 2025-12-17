@@ -36,13 +36,13 @@ const MODEL_INFO = {
 const ModelComparison = () => {
     const [metrics, setMetrics] = useState<any[]>([]);
     const [studentData, setStudentData] = useState({
-        mark: 75,
-        gpa_y: 3.0,
-        cgpa_y: 3.0,
-        grade_point: 3.0,
-        cgpa_x: 3.0,
+        mark: 58,
+        gpa_y: 2.0,
+        cgpa_y: 2.0,
+        grade_point: 2.0,
+        cgpa_x: 2.0,
         yeargroup: 2024,
-        gpa_x: 3.0,
+        gpa_x: 2.0,
         subject_credit: 3.0,
     });
     const [predictions, setPredictions] = useState<ModelPrediction[]>([]);
@@ -143,7 +143,15 @@ const ModelComparison = () => {
                             type="number" 
                             step="0.01"
                             value={studentData.gpa_y}
-                            onChange={(e) => setStudentData({...studentData, gpa_y: parseFloat(e.target.value)})}
+                            onChange={(e) => {
+                              const val = parseFloat(e.target.value) || 0;
+                              setStudentData({
+                                ...studentData, 
+                                gpa_y: val,
+                                gpa_x: val,
+                                grade_point: val
+                              });
+                            }}
                             className="w-full bg-gray-50 dark:bg-[#1A1A1A] border border-gray-200 dark:border-[#333] rounded px-3 py-2 text-sm text-gray-900 dark:text-white"
                          />
                         </div>
@@ -153,7 +161,14 @@ const ModelComparison = () => {
                             type="number" 
                             step="0.01"
                             value={studentData.cgpa_y}
-                            onChange={(e) => setStudentData({...studentData, cgpa_y: parseFloat(e.target.value)})}
+                            onChange={(e) => {
+                              const val = parseFloat(e.target.value) || 0;
+                              setStudentData({
+                                ...studentData, 
+                                cgpa_y: val,
+                                cgpa_x: val
+                              });
+                            }}
                             className="w-full bg-gray-50 dark:bg-[#1A1A1A] border border-gray-200 dark:border-[#333] rounded px-3 py-2 text-sm text-gray-900 dark:text-white"
                          />
                         </div>
@@ -169,7 +184,7 @@ const ModelComparison = () => {
                      
                      <div className="p-4 bg-blue-50 dark:bg-blue-900/10 rounded-lg text-xs text-blue-800 dark:text-blue-300">
                         <Info className="w-4 h-4 inline mr-1 mb-0.5"/>
-                        Comparing 6 models on Accuracy, Precision, Recall, F1, and AUC.
+                        Comparing 4 logistic regression models on Accuracy, Precision, Recall, F1, and AUC.
                      </div>
                 </div>
             </DarkCard>

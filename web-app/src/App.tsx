@@ -12,7 +12,8 @@ import {
   Check,
   TrendingUp,
   Database,
-  BarChart2
+  BarChart2,
+  Scale
 } from 'lucide-react';
 
 import ExecutiveDashboard from './ExecutiveDashboard';
@@ -27,6 +28,7 @@ import Prosit3Dashboard from './prosit3/Dashboard';
 import Prosit3Predict from './prosit3/PredictRisk';
 import Prosit3Compare from './prosit3/ModelComparison';
 import Prosit3Ethics from './prosit3/EthicalConsiderations';
+import Prosit5EthicalAudit from './prosit5/EthicalAudit';
 
 // --- Sidebar Component ---
 
@@ -83,6 +85,7 @@ const Sidebar = ({
         { id: 'adm', label: 'Admissions', icon: Users, path: '/prosit5/admissions' },
         { id: 'acad', label: 'Academic Files', icon: FileText, path: '/prosit5/academic' },
         { id: 'ajc', label: 'Conduct Risks', icon: ShieldAlert, path: '/prosit5/conduct' },
+        { id: 'ethics', label: 'Ethical Audit', icon: Scale, path: '/prosit5/ethics' },
       ];
     }
   };
@@ -174,7 +177,8 @@ const Sidebar = ({
       </nav>
 
       <div className="mt-8">
-         <div className="bg-[#881C1C]/5 dark:bg-[#1F1F1F] rounded-2xl p-4 border border-[#881C1C]/10 dark:border-[#262626] relative overflow-hidden group transition-colors duration-300">
+         <a href={selectedProsit === 5 ? '/prosit5/ethics' : selectedProsit === 3 ? '/prosit3/ethics' : '#'} className="block">
+         <div className="bg-[#881C1C]/5 dark:bg-[#1F1F1F] rounded-2xl p-4 border border-[#881C1C]/10 dark:border-[#262626] relative overflow-hidden group transition-all duration-300 hover:border-[#881C1C]/30 dark:hover:border-emerald-500/30 cursor-pointer">
             <div className="relative z-10">
               <p className="text-gray-500 dark:text-gray-400 text-xs mb-1">1/4 Steps</p>
               <h4 className="text-gray-900 dark:text-white font-bold mb-4">Complete the<br/>Ethical Audit</h4>
@@ -187,6 +191,7 @@ const Sidebar = ({
             {/* Background Glow */}
             <div className="absolute -right-4 -bottom-4 w-20 h-20 bg-[#881C1C]/10 dark:bg-emerald-500/10 rounded-full blur-xl group-hover:bg-[#881C1C]/20 dark:group-hover:bg-emerald-500/20 transition-all"></div>
          </div>
+         </a>
          <div className="flex items-center space-x-2 mt-4 text-xs text-gray-500 px-2 hover:text-gray-900 dark:hover:text-white cursor-pointer transition-colors">
             <Settings size={14}/> <span>Docs & Settings</span>
          </div>
@@ -312,6 +317,7 @@ const App = () => {
             <Route path="/prosit5/admissions" element={<AdmissionsView />} />
             <Route path="/prosit5/academic" element={<AcademicView />} />
             <Route path="/prosit5/conduct" element={<ConductView />} />
+            <Route path="/prosit5/ethics" element={<Prosit5EthicalAudit />} />
             
             {/* Default redirect */}
             <Route path="/" element={<Navigate to="/prosit5/dashboard" replace />} />

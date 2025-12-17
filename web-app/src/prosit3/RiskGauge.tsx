@@ -21,7 +21,7 @@ const RiskGauge = ({ probability, riskLevel }: RiskGaugeProps) => {
       {/* Gauge Container */}
       <div className="relative w-64 h-32">
         {/* Background Arc */}
-        <svg className="w-full h-full" viewBox="0 0 200 100">
+        <svg className="w-full h-full" viewBox="0 0 200 100" key={`gauge-${probability.toFixed(1)}`}>
           {/* Low Risk Zone (Green) */}
           <path
             d="M 20 90 A 80 80 0 0 1 60 20"
@@ -47,18 +47,12 @@ const RiskGauge = ({ probability, riskLevel }: RiskGaugeProps) => {
             opacity="0.2"
           />
           
-          {/* Active Arc */}
-          <path
-            d={`M 20 90 A 80 80 0 ${rotation > 90 ? '1' : '0'} 1 ${100 + 80 * Math.cos((rotation - 90) * Math.PI / 180)} ${90 - 80 * Math.sin((rotation - 90) * Math.PI / 180)}`}
-            fill="none"
-            stroke={riskLevel === 'low' ? 'rgb(34, 197, 94)' : riskLevel === 'moderate' ? 'rgb(234, 179, 8)' : 'rgb(239, 68, 68)'}
-            strokeWidth="20"
-            strokeLinecap="round"
-            className="transition-all duration-1000 ease-out"
-          />
-          
           {/* Needle */}
-          <g transform={`rotate(${rotation - 90} 100 90)`} className="transition-transform duration-1000 ease-out">
+          <g 
+            transform={`rotate(${rotation - 90} 100 90)`} 
+            style={{ willChange: 'transform' }}
+            className="transition-transform duration-1000 ease-out"
+          >
             <line
               x1="100"
               y1="90"

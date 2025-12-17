@@ -1,17 +1,8 @@
 {
-  "timestamp": "2025-12-15T16:20:14.123720",
+  "timestamp": "2025-12-17T21:57:21.917059",
   "dataset_info": {
-    "total_students": 1367,
-    "students_with_admissions_data": 1367,
-    "students_with_first_year_data": 1358,
-    "yeargroups": [
-      2023,
-      2024,
-      2025,
-      2026,
-      2027,
-      2028
-    ]
+    "total_students": 3718,
+    "students_with_admissions_data": 1509
   },
   "q1_first_year_struggle": {
     "model_type": "RandomForestClassifier",
@@ -108,5 +99,47 @@
         "importance": 0.0
       }
     ]
+  },
+  "q6_admissions_impact": {
+    "analysis_type": "Correlation Analysis",
+    "n_samples": 1364,
+    "correlations": {
+      "math_score": {
+        "correlation": 0.2349707369405613,
+        "p_value": 1.4501437401965533e-18,
+        "significant": true
+      },
+      "english_score": {
+        "correlation": 0.2377264879396992,
+        "p_value": 5.602954220832085e-19,
+        "significant": true
+      },
+      "composite_score": {
+        "correlation": 0.3141608361378633,
+        "p_value": 1.2640817119947393e-32,
+        "significant": true
+      }
+    },
+    "interpretation": "Admissions scores show correlation with final academic performance"
+  },
+  "q7_program_success": {
+    "analysis_type": "Program Comparison",
+    "n_samples": 3718,
+    "programs_analyzed": 10,
+    "top_program": "10",
+    "top_success_rate": 0.725,
+    "interpretation": "Success rates vary significantly across programs"
+  },
+  "q9_ajc_impact": {
+    "analysis_type": "T-test Comparison",
+    "n_samples": 3718,
+    "ajc_cases": 134,
+    "ajc_percentage": 3.604088219472835,
+    "ajc_mean_cgpa": 2.7875373134328356,
+    "no_ajc_mean_cgpa": 3.003426339285714,
+    "t_statistic": -4.095284949720745,
+    "p_value": 4.306292553993511e-05,
+    "significant": true,
+    "interpretation": "AJC involvement shows impact on academic performance"
   }
 }

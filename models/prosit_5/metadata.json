@@ -1,0 +1,36 @@
+{
+  "q1": {
+    "model_path": "../models/prosit_5/q1_model.pkl",
+    "scaler_path": "../models/prosit_5/q1_scaler.pkl",
+    "features": [
+      "math_score",
+      "english_score",
+      "composite_score"
+    ],
+    "accuracy": 0.8145695364238411,
+    "auc": 0.5590011614401859
+  },
+  "q2": {
+    "model_path": "../models/prosit_5/q2_model.pkl",
+    "scaler_path": "../models/prosit_5/q2_scaler.pkl",
+    "features": [
+      "math_score",
+      "english_score",
+      "composite_score"
+    ],
+    "accuracy": 0.8410596026490066,
+    "auc": 0.5722411831626848
+  },
+  "q3": {
+    "model_path": "../models/prosit_5/q3_model.pkl",
+    "scaler_path": "../models/prosit_5/q3_scaler.pkl",
+    "features": [
+      "math_score",
+      "english_score",
+      "composite_score",
+      "avg_gpa"
+    ],
+    "accuracy": 0.9635761589403974,
+    "auc": 0.9797959636282989
+  }
+}
